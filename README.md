@@ -1,13 +1,16 @@
 Job Board API using Django REST Framework
 
 1. Project Title
+   
    Job Board API using Django REST Framework
 
-2. Project Description
+3. Project Description
+   
    This is a RESTful backend API built with Django and Django REST Framework for a job board platform. It allows employers to post job listings and manage their companies, while enabling job seekers to browse jobs and submit applications. The API handles user authentication, company management, job postings, and application tracking with secure role-based access control.
 
-3. Features
-   User Authentication - Register, login, and logout with token-based authentication
+4. Features
+   
+User Authentication - Register, login, and logout with token-based authentication
 
 Company Management - Create, read, update, and delete company profiles
 
@@ -23,14 +26,15 @@ Admin Interface - Django admin panel for easy data management
 
 Browsable API - User-friendly interface for testing endpoints
 
-4. Tech Stack
-   Python, Django, Django REST Framework
+5. Tech Stack
+   
+ Python, Django, Django REST Framework
 
 SQLite database
 
 Token authentication
 
-5. Project Structure
+6. Project Structure
 
 job-board-api/
 ├── config/ # Django project configuration
@@ -61,7 +65,7 @@ job-board-api/
 ├── manage.py # Django management script
 └── README.md # Project documentation
 
-6. API Endpoints
+7. API Endpoints
 
 Authentication
 POST /api/users/register/ - Register
