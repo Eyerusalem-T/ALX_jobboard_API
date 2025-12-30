@@ -37,32 +37,59 @@ Token authentication
 6. Project Structure
 
 job-board-api/
+
 ├── config/ # Django project configuration
+
 │ ├── settings.py # Project settings
+
 │ ├── urls.py # Main URL routing
+
 │ └── wsgi.py # WSGI configuration
+
 ├── users/ # User authentication app
+
 │ ├── models.py # User-related models
+
 │ ├── views.py # User authentication views
+
 │ ├── serializers.py # User serializers
+
 │ └── urls.py # User API endpoints
+
 ├── companies/ # Company management app
+
 │ ├── models.py # Company model
+
 │ ├── views.py # Company CRUD views
+
 │ ├── serializers.py # Company serializers
+
 │ └── urls.py # Company API endpoints
+
 ├── jobs/ # Job management app
+
 │ ├── models.py # Job model
+
 │ ├── views.py # Job CRUD views
+
 │ ├── serializers.py # Job serializers
+
 │ └── urls.py # Job API endpoints
+
 ├── applications/ # Job applications app
+
 │ ├── models.py # Application model
+
 │ ├── views.py # Application views
+
 │ ├── serializers.py # Application serializers
+
 │ └── urls.py # Application API endpoints
+
 ├── db.sqlite3  
+
 ├── manage.py # Django management script
+
 └── README.md # Project documentation
 
 7. API Endpoints
