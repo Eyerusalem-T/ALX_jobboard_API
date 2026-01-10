@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: job_board_api
+    runtime: python
+    plan: free
+    branch: main
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn myproject.wsgi:application"
+    healthCheckPath: /admin/
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: job_board_api-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
+      - key: WEB_CONCURRENCY
+        value: 4
+
+databases:
+  - name: job_board_api-db
+    plan: free
