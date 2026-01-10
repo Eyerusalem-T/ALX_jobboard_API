@@ -18,4 +18,4 @@ errorlog = "-"   # Log to stderr
 loglevel = "info"
 
 # Process naming
-proc_name = "job_board_api"
+proc_name = "config"

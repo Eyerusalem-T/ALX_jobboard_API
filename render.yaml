@@ -1,16 +1,16 @@
 services:
   - type: web
-    name: job_board_api
+    name: config
     runtime: python
     plan: free
     branch: main
     buildCommand: "./build.sh"
-    startCommand: "gunicorn myproject.wsgi:application"
+    startCommand: "gunicorn config.wsgi:application"
     healthCheckPath: /admin/
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: job_board_api-db
+          name: config-db
           property: connectionString
       - key: SECRET_KEY
         generateValue: true
@@ -20,5 +20,5 @@ services:
         value: 4
 
 databases:
-  - name: job_board_api-db
+  - name: config-db
     plan: free
