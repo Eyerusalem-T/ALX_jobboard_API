@@ -1,0 +1,30 @@
+# Environment
+venv/
+env/
+.env
+.env.local
+
+# Database
+*.sqlite3
+*.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Static files collected
+staticfiles/
+media/
